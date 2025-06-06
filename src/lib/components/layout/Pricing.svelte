@@ -113,61 +113,68 @@ Please update features according to the company's product offering. Do not remov
 			}
 		],
 		tiers = [
-			{
-				name: "Starter",
-				monthlyPrice: 9.99,
-				yearlyPrice: 7.99, // 20% savings
-				description: "Perfect for individuals and small projects",
-				features: [
-					"Up to 5 projects",
-					"Basic analytics",
-					"24-hour support response time",
-					"1GB storage"
-				],
-				cta: {
-					label: "Get started",
-					href: "/signup?plan=starter"
-				}
-			},
-			{
-				name: "Pro",
-				monthlyPrice: 29.99,
-				yearlyPrice: 23.99, // 20% savings
-				description: "For growing teams and businesses",
-				features: [
-					"Unlimited projects",
-					"Advanced analytics",
-					"4-hour support response time",
-					"10GB storage",
-					"Custom domains",
-					"Team collaboration tools"
-				],
-				cta: {
-					label: "Get started",
-					href: "/signup?plan=pro"
-				},
-				highlight: true
-			},
-			{
-				name: "Enterprise",
-				monthlyPrice: null,
-				yearlyPrice: null,
-				description: "For large organizations with specific needs",
-				features: [
-					"Everything in Pro",
-					"Dedicated account manager",
-					"1-hour support response time",
-					"Unlimited storage",
-					"Advanced security features",
-					"Custom integrations",
-					"99.9% uptime SLA"
-				],
-				cta: {
-					label: "Contact sales",
-					href: "/contact"
-				}
+		{
+			name: "Pilot",
+			monthlyPrice: null,
+			yearlyPrice: null,
+			description: "Test Donna in a real environment with white-glove setup, core integrations, and essential reporting. Limited pilot cohort, by application only.",
+			features: [
+				"Real-time project pulse",
+				"Daily presidential briefings",
+				"Integrations (up to 3 tools)",
+				"White-glove onboarding",
+				"SOC-2 compliant",
+				"Zero data retention policy"
+			],
+			cta: {
+				label: "Apply for pilot",
+				href: "/apply"
 			}
-		]
+		},
+
+		{
+			name: "Professional",
+			monthlyPrice: 149,
+			yearlyPrice: 125, // Sample annual price (discounted)
+			description: "For executive teams who want analytics, cross-functional visibility, and advanced reporting in a secure, integrated workflow.",
+			features: [
+				"Real-time project pulse",
+				"Daily presidential briefings",
+				"Productivity analytics (40-hour insight)",
+				"Integrations (up to 7 tools)",
+				"Cross-functional project tracking",
+				"White-glove onboarding",
+				"SOC-2 compliant",
+				"Zero data retention policy"
+			],
+			cta: {
+				label: "Request demo",
+				href: "/request-demo"
+			},
+			highlight: true
+		},
+
+		{
+			name: "Enterprise",
+			monthlyPrice: null,
+			yearlyPrice: null,
+			description: "For organizations that require custom integrations, deep analytics, and dedicated strategic partnership. Built for scale, tailored for you.",
+			features: [
+				"Everything in Professional",
+				"Advanced team performance analytics",
+				"Support for custom integrations",
+				"Dedicated customer success manager",
+				"White-glove onboarding",
+				"Enterprise-grade support (1 hour SLA)",
+				"SOC-2 compliant",
+				"Zero data retention policy"
+			],
+			cta: {
+				label: "Contact sales",
+				href: "/contact"
+			}
+		}
+	]
 	}: {
 		title?: string;
 		subtitle?: string;

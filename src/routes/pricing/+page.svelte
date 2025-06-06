@@ -15,35 +15,43 @@
 <Pricing />
 
 <Testimonials
-	testimonials={[
-		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
-			quote:
-				"This solution transformed our workflow and increased productivity by 35% in just two months.",
-			image:
-				"https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		},
-		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
-			quote:
-				"The implementation was seamless and the support team was exceptional throughout the process.",
-			image:
-				"https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		},
-		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
-			quote:
-				"We've tried multiple solutions, but this is the only one that perfectly addressed all our requirements.",
-			image:
-				"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&estimonial-3.jpg"
-		}
-	]}
+  testimonials={[
+    {
+      name: "Elise Han",
+      position: "CEO",
+      company: "Memora Health",
+      quote:
+        "With Donna, I know exactly where projects stand without chasing updates. It’s like invisibly attending every meeting.",
+      image: "/generated/elise-han-east-asian-female-executive-office.webp"
+    },
+    {
+      name: "Jacob Tran",
+      position: "Cofounder",
+      company: "ZeroNorth",
+      quote:
+        "Donna surfaces problems before they land in my inbox. I’ve cut down weekly check-in time by over 75%.",
+      image: "/generated/jacob-tran-vietnamese-male-founder.webp"
+    },
+    {
+      name: "Nina Gold",
+      position: "COO",
+      company: "Pivotal AI",
+      quote:
+        "The productivity visibility helps me debug org issues faster—without resorting to time tracking or intrusive surveys.",
+      image: "/generated/image-a-professional-headshot-of-a-black-femal.webp"
+    }
+  ]}
 />
 
-<CallToAction />
+<CallToAction
+  title="Lead with clarity while gaining back your time"
+  subtitle="Join the exclusive pilot for CEOs and executives—white-glove onboarding included."
+  description="Donna connects your calendar, project tools, and comms to show what’s moving, what’s blocked, and where your team’s time is going. Enjoy real-time visibility and decision-ready insights, all with enterprise-grade privacy and zero data retention. Spots are limited; secure your access and reclaim focus each morning."
+  imageSrc="/generated/image-a-happy-executive-standing-in-a-bright-m.webp"
+  callsToAction={[{
+    href: '/apply',
+    label: 'Apply to the pilot',
+    variant: 'primary',
+  }]}
+/>
+
