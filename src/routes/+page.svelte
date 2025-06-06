@@ -7,16 +7,50 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 </script>
 
-<Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="/sample.png"
-	generating
+<CustomerCardHero
+  centered={true}
+  title="Know what’s moving. And what’s not."
+  subtitle="Donna gives CEOs and executives a real-time view of project progress and team productivity—no meetings or manual updates needed."
+  customers={[
+    {
+      name: 'Amanda Hayes',
+      position: 'CEO, Willow Labs',
+      imageSrc: '/generated/image-a-confident-female-ceo-stands-in-a-moder.webp'
+    },
+    {
+      name: 'James Carter',
+      position: 'Chief Operating Officer',
+      imageSrc: '/generated/image-in-a-bright-conference-room-a-profession.webp'
+    },
+    {
+      name: 'Priya Desai',
+      position: 'Tech Founder',
+      imageSrc: '/generated/image-a-female-tech-founder-is-seated-at-a-des.webp'
+    },
+    {
+      name: 'David Kim',
+      position: 'Senior Executive',
+      imageSrc: '/generated/image-a-male-senior-executive-is-in-a-stylish-.webp'
+    },
+    {
+      name: 'Julia Schroeder',
+      position: 'Executive Leader',
+      imageSrc: '/generated/image-a-female-executive-leader-stands-confide.webp'
+    }
+  ]}
 />
-<LogoScroller label="" generating />
+<LogoScroller
+	label="Trusted by industry leaders"
+	logoUrls={[
+		'https://logo.clearbit.com/stripe.com',
+		'https://logo.clearbit.com/openai.com',
+		'https://logo.clearbit.com/airbnb.com',
+		'https://logo.clearbit.com/figma.com'
+	]}
+/>
 
 <Summary
 	generating
